@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COEWAKABIU - ICDL Registration Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logowaka.jfif"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="nav-header">
+      <section class="header container">
+        <section class="header__logo">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="./assets/img/logowaka.jfif"
+              alt="Waka Biu Logo"
+          /></a>
+          <h1 class="header__logo__text">COEWAKABIU</h1>
+        </section>
+
+        <!-- Hamburger Menu Button -->
+        <section class="hamburger" onclick="toggleMobileMenu()">
+          <span class="hamburger__icon top"></span>
+          <span class="hamburger__icon middle"></span>
+          <span class="hamburger__icon bottom"></span>
+        </section>
+        <!-- End Hamburger Menu Button -->
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" onclick="toggleMobileMenu()">
+          <!-- Hamburger Menu Button -->
+          <section class="hamburger hamburger--close">
+            <span class="hamburger__icon top"></span>
+            <span class="hamburger__icon bottom"></span>
+          </section>
+          <!-- End Hamburger Menu Button -->
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#certification">Certification</a></li>
+            <li><a href="index.html#modules">ICDL Modules</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" onclick="toggleModal()">Get Certified</a></li>
+            <li><a class="active" href="register.html">Register</a></li>
+            <li><a href="#" onclick="toggleModal()">Enroll</a></li>
+          </ul>
+        </nav>
+        <!-- End Mobile Navigation -->
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <ul class="menu menu--left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#certification">Certification</a></li>
+            <li><a href="index.html#modules">ICDL Modules</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" onclick="toggleModal()">Get Certified</a></li>
+          </ul>
+          <ul class="menu menu--right">
+            <li><a class="active" href="register.html">Register</a></li>
+            <li>
+              <a class="btn btn--primary" href="#" onclick="toggleModal()"
+                >Enroll</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- End Desktop Navigation -->
+      </section>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+      <!-- Registration Form Section -->
+      <section class="container">
+        <section class="application register-form">
+          <form action="index.html" method="get">
+            <section class="form-heading">
+              <p class="text-primary">Register</p>
+              <h2>Get Certified Today</h2>
+              <p>ICDL Workforce Training Form</p>
+            </section>
+            <section class="flex-2">
+              <section class="form-group">
+                <label for="FirstName">First Name <span>*</span></label>
+                <input
+                  id="FirstName"
+                  name="firstname"
+                  type="text"
+                  placeholder="Enter your First Name"
+                  required
+                />
+              </section>
+              <section class="form-group">
+                <label for="LastName">Last Name <span>*</span></label>
+                <input
+                  id="LastName"
+                  name="lastname"
+                  type="text"
+                  placeholder="Enter your Last Name"
+                  required
+                />
+              </section>
+            </section>
+            <section class="flex-2">
+              <section class="form-group">
+                <label for="Email">Email <span>*</span></label>
+                <input
+                  id="Email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your Email"
+                  required
+                />
+              </section>
+              <section class="form-group">
+                <label for="Phone">Phone <span>*</span></label>
+                <input
+                  id="Phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="Enter your Phone Number"
+                  required
+                />
+              </section>
+            </section>
+            <section class="flex-2">
+              <section class="form-group">
+                <label for="Address">Address <span>*</span></label>
+                <input
+                  id="Address"
+                  name="address"
+                  type="text"
+                  placeholder="Enter your Address"
+                  required
+                />
+              </section>
+              <section class="form-group">
+                <label for="City">City <span>*</span></label>
+                <input
+                  id="City"
+                  name="city"
+                  type="text"
+                  placeholder="Enter your City"
+                  required
+                />
+              </section>
+            </section>
+            <section class="flex-2">
+              <section class="form-group">
+                <label for="Country">Country <span>*</span></label>
+                <input
+                  id="Country"
+                  name="country"
+                  type="text"
+                  placeholder="Enter your Country"
+                  required
+                />
+              </section>
+              <section class="form-group">
+                <label for="Date of Birth">Date of Birth <span>*</span></label>
+                <input id="Date of Birth" name="dob" type="date" required />
+              </section>
+            </section>
+            <section class="form-group terms">
+              <input type="checkbox" name="terms" id="terms" required />
+              <span class="term-text">Agree to our terms and policy</span>
+            </section>
+            <section class="form-group">
+              <a href="about.html">Learn more</a>
+            </section>
+            <section class="form-group">
+              <button class="btn btn--primary" type="submit">
+                Submit and Register
+              </button>
+            </section>
+          </form>
+        </section>
+      </section>
+      <!-- End Registratin Form Section -->
+    </main>
+    <!-- Footer -->
+    <footer>
+      <section class="footer container">
+        <article>
+          <section class="footer__title">
+            <h2>COEWAKABIU & ICDL</h2>
+            <span></span>
+          </section>
+          <p>
+            ICDL is the world’s leading computer skills certification. To date
+            more than 15 million people have engaged with the ICDL programme, in
+            over 100 countries.
+          </p>
+          <section class="socials">
+            <a href="#"><img src="./assets/img/logo-twitter.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/logo-facebook.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/logo-instagram.svg" alt="" /></a>
+          </section>
+        </article>
+        <article>
+          <section class="footer__title">
+            <h2>Resources</h2>
+            <span></span>
+          </section>
+          <ul>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#instructors">Our Instructors</a></li>
+            <li><a href="#modules">ICDL Modules</a></li>
+            <li><a href="#certification">Certifications</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <section class="footer__title">
+            <h2>Quick Links</h2>
+            <span></span>
+          </section>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Get Certified</a></li>
+            <li><a href="#">Enroll Now</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <section class="footer__title">
+            <h2>Have a Question?</h2>
+            <span></span>
+          </section>
+          <ul>
+            <li>
+              <img src="./assets/img/location-outline.svg" alt="" />
+              <p>COEWAKABIU, Borno State, Nigeria</p>
+            </li>
+            <li>
+              <img src="./assets/img/call-outline.svg" alt="" />
+              <p>+2348030422704</p>
+            </li>
+            <li>
+              <img src="./assets/img/mail-outline.svg" alt="" /><a
+                href="mailto:support@coewaka.edu.ng"
+                >support@coewaka.edu.ng</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        COEWAKABIU & ICDL -
+        <a href="https://https://hopewell.com.ng/"
+          >Powered by Hopewell Solution Services</a
+        >
+      </p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="to-top">
+      <img src="./assets/img/arrow-up-outline.svg" alt="To top a" />
+    </a>
+    <!-- End Back to Top Button -->
+
+    <!-- Application Form Modal -->
+    <section id="application-modal" class="modal">
+      <section class="modal-content">
+        <section class="modal-heading">
+          <img
+            onclick="toggleModal()"
+            src="./assets/img/close-outline.svg"
+            alt=""
+          />
+        </section>
+        <section class="application">
+          <form action="index.html" method="get">
+            <section class="form-heading">
+              <section class="icdlapp">ICDL Application</section>
+              <h2>Get Certified Today</h2>
+              <p>Please fill in your information and send it to the school.</p>
+            </section>
+            <section class="flex-2">
+              <section class="form-group">
+                <label for="FirstName">First Name <span>*</span></label>
+                <input
+                  id="FirstName"
+                  name="firstname"
+                  type="text"
+                  placeholder="Enter your First Name"
+                  required
+                />
+              </section>
+              <section class="form-group">
+                <label for="LastName">Last Name <span>*</span></label>
+                <input
+                  id="LastName"
+                  name="lastname"
+                  type="text"
+                  placeholder="Enter your Last Name"
+                  required
+                />
+              </section>
+            </section>
+            <section class="flex-2">
+              <section class="form-group">
+                <label for="Email">Email <span>*</span></label>
+                <input
+                  id="Email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your Email"
+                  required
+                />
+              </section>
+              <section class="form-group">
+                <label for="Phone">Phone <span>*</span></label>
+                <input
+                  id="Phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="Enter your Phone Number"
+                  required
+                />
+              </section>
+            </section>
+            <section class="flex-2">
+              <section class="form-group">
+                <label for="Address">Address <span>*</span></label>
+                <input
+                  id="Address"
+                  name="address"
+                  type="text"
+                  placeholder="Enter your Address"
+                  required
+                />
+              </section>
+              <section class="form-group">
+                <label for="City">City <span>*</span></label>
+                <input
+                  id="City"
+                  name="city"
+                  type="text"
+                  placeholder="Enter your City"
+                  required
+                />
+              </section>
+            </section>
+            <section class="flex-2">
+              <section class="form-group">
+                <label for="Country">Country <span>*</span></label>
+                <input
+                  id="Country"
+                  name="country"
+                  type="text"
+                  placeholder="Enter your Country"
+                  required
+                />
+              </section>
+              <section class="form-group">
+                <label for="Date of Birth">Date of Birth <span>*</span></label>
+                <input id="Date of Birth" name="dob" type="date" required />
+              </section>
+            </section>
+            <section class="form-group terms">
+              <input type="checkbox" name="terms" id="terms" required />
+              <span class="term-text">Agree to our terms and policy</span>
+            </section>
+            <section class="form-group">
+              <a href="about.html">Learn more</a>
+            </section>
+            <section class="form-group">
+              <button class="btn btn--primary" type="submit">
+                Submit and Register
+              </button>
+            </section>
+          </form>
+        </section>
+      </section>
+    </section>
+    <!-- End Application Form Modal -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
