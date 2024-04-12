@@ -676,7 +676,9 @@ ul.menu--right {
 }
 
 .instructor > img {
-  border-radius: 50%;
+  border-radius: 100%;
+  width: 70%;
+  height: 50%;
 }
 
 .instructor__name h3 {
@@ -686,6 +688,7 @@ ul.menu--right {
 
 .instructor__name p {
   color: var(--clr-gray-light);
+  text-align: center;
 }
 
 .instructor__socials {
@@ -752,6 +755,8 @@ ul.menu--right {
 
 .student img {
   border-radius: 50%;
+  max-width: 100%;
+  width: 25%;
 }
 
 .student h3 {
